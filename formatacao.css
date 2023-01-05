@@ -1,0 +1,13 @@
+body{
+	background: #000;
+}
+
+.bloco{
+	size: 200px;
+	background: gray;
+	color: white;
+	border-radius: 5px;
+	padding: 50px;
+	align: center;
+	font-family: arial;
+}
