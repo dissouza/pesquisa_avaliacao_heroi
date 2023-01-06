@@ -1,6 +1,6 @@
 
 body{
-	background: linear-gradient(to bottom, lightgray 30%, black);
+	background: lightgray;
 	background-repeat: no-repeat;
 
 }
@@ -15,25 +15,35 @@ main{
 	background: dimgray;
 	color: white;
 	border-radius: 30px;
+	border-block-style: blur;
 	padding: 40px;
 	font-family: arial;
-	box-shadow: 5px 8px 15px black;
+	box-shadow: 8px 8px 20px #404040;
     position: relative;
 	
 }
 
 .bloco_heroi{
-	width: 100%;
-	margin: 0px;
-	
+	width: 100%;	
+}
+
+ul {
+   margin-block-start: 0;
+   padding-inline-start: 0px;
+
+
+} 
+
+ul li{
+	display: inline;
+
 }
 
 .heroi{
-	max-width: 10%;
-	border-radius: 50%;
-	
-	position: relative;
-	
+	max-width: 20%;
+	border-radius: 50%;	
+	position: relative;	
+	padding: 5px;
 }
 
 .batman{
