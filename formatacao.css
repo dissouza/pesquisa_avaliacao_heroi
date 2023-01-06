@@ -5,30 +5,43 @@ body{
 }
 
 .bloco{
-	top:50%;
-	left:50%;
+	margin-top: middle;
 	max-width: 20%;
 	max-height: 60%;
+	box-align: center;
 	background: dimgray;
 	color: white;
 	border-radius: 10px;
 	padding: 40px;
 	font-family: arial;
 	box-shadow: 5px 5px black;
-	align-content: center;
+	position: absolute;
+	
 }
 
 .bloco_heroi{
 	width: 100%;
 }
 
-
 .heroi{
 	max-width: 20%;
 	height: 60px;
-	align: ;
 }
 
 .estrelas{
-	max-width: 70%;
+	width: 100%;
+}
+
+.estrelas:hover{
+	width: 100%;
+}
+
+
+.star_empty{
+	max-width: 8%;
+}
+
+.star_empty:hover{
+	max-width: 8%;
+	src: 'star_filled.png';
 }
