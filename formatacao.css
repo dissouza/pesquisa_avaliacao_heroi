@@ -24,13 +24,21 @@ main{
 
 .bloco_heroi{
 	width: 100%;
+	margin: 0px;
 	
 }
 
 .heroi{
-	max-width: 40%;
+	max-width: 100%;
 	border-radius: 50%;
-	box-decoration-break: slice;
+	display: inline-flex;
+	position: relative;
+	object-fit: cover;
+}
+
+.batman{
+	max-width: 28%;
+	object-fit: cover;
 }
 
 .estrelas{
@@ -38,9 +46,11 @@ main{
 }
 
 .star_empty{	
-	max-width: 10%;
+	max-width: 9%;
+	max-height: auto;
 }
 
  .star_empty_img{
- 	max-width: 10%;
+ 	max-width: 9%;
+ 	max-height: auto;
  }
