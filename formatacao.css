@@ -29,11 +29,11 @@ main{
 }
 
 .heroi{
-	max-width: 100%;
+	max-width: 10%;
 	border-radius: 50%;
-	display: inline-flex;
+	
 	position: relative;
-	object-fit: cover;
+	
 }
 
 .batman{
