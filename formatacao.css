@@ -1,47 +1,46 @@
+
 body{
-	background: lightgray;
-	width: 100%;
-	height: 100%;
+	background: linear-gradient(to bottom, lightgray 30%, black);
+	background-repeat: no-repeat;
+
+}
+main{
+	margin: 0 auto;
+	display: block;
 }
 
 .bloco{
-	margin-top: middle;
-	max-width: 20%;
+	max-width: 25%;
 	max-height: 60%;
-	box-align: center;
 	background: dimgray;
 	color: white;
-	border-radius: 10px;
+	border-radius: 30px;
 	padding: 40px;
 	font-family: arial;
-	box-shadow: 5px 5px black;
-	position: absolute;
+	box-shadow: 5px 8px 15px black;
+    position: relative;
 	
 }
 
 .bloco_heroi{
 	width: 100%;
+	
 }
 
 .heroi{
-	max-width: 20%;
-	height: 60px;
+	max-width: 40%;
+	border-radius: 50%;
+	box-decoration-break: slice;
 }
 
 .estrelas{
 	width: 100%;
 }
 
-.estrelas:hover{
-	width: 100%;
+.star_empty{	
+	max-width: 10%;
 }
 
-
-.star_empty{
-	max-width: 8%;
-}
-
-.star_empty:hover{
-	max-width: 8%;
-	src: 'star_filled.png';
-}
+ .star_empty_img{
+ 	max-width: 10%;
+ }
