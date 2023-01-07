@@ -20,13 +20,12 @@ main{
 	font-family: arial;
 	box-shadow: 8px 8px 20px #404040;
     position: relative;
-    translate: none;
-	
 }
 
 .bloco_heroi{
-	width: 100%;
+	width: 100% auto;	
 	margin-top: 30px;
+	display: flex;
 }
 
 
@@ -43,13 +42,15 @@ ul li{
 }
 
 .heroi{
-	max-width: 20%;
+	width: 20%;
+
 	border-radius: 50%;	
-	position: relative;	
+	position: relative;
+	display: inline;
 	margin: 8px;
 }
 
-a:hover .heroi { 
+.heroi:hover { 
 	box-shadow: 4px 4px 8px #404040;
 	transform: scale(1.1);
 }
@@ -88,3 +89,4 @@ nav.estrelas{
  	display: inline;
  	transform: scale(1.1);
  }
+
