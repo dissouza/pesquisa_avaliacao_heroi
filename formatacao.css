@@ -20,6 +20,7 @@ main{
 	font-family: arial;
 	box-shadow: 8px 8px 20px #404040;
     position: relative;
+    translate: none;
 	
 }
 
@@ -36,7 +37,6 @@ ul {
 
 ul li{
 	display: inline;
-
 }
 
 .heroi{
@@ -51,16 +51,30 @@ ul li{
 	object-fit: cover;
 }
 
-.estrelas{
+div.estrelas{
 	width: 100%;
+	display: none;
+	padding: 0px;
 }
 
-.star_empty{	
-	max-width: 9%;
-	max-height: auto;
+.stars_line{
+	display: inline;
+	
 }
 
- .star_empty_img{
- 	max-width: 9%;
- 	max-height: auto;
+.star_empty{ 	
+ 	max-width: 8%; 	
+ 	display: relative;
+ }
+
+ .star_filled{ 	
+ 	max-width: 8%; 	
+ 	display: none;
+ }
+
+.star:hover .star_empty{
+ 	display: none;
+ }
+ .star:hover .star_filled{
+ 	display: inline;
  }
