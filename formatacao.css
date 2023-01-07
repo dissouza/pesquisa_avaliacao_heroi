@@ -6,10 +6,10 @@ body{
 }
 main{
 	margin: 0 auto;
-	display: block;
 }
 
 .bloco{
+
 	max-width: 25%;
 	max-height: 60%;
 	background: dimgray;
@@ -26,7 +26,10 @@ main{
 
 .bloco_heroi{
 	width: 100%;
+	margin-top: 30px;
 }
+
+
 
 ul {
    margin-block-start: 0;
@@ -43,7 +46,12 @@ ul li{
 	max-width: 20%;
 	border-radius: 50%;	
 	position: relative;	
-	padding: 8px;
+	margin: 8px;
+}
+
+a:hover .heroi { 
+	box-shadow: 4px 4px 8px #404040;
+	transform: scale(1.1);
 }
 
 .batman{
@@ -51,10 +59,11 @@ ul li{
 	object-fit: cover;
 }
 
-div.estrelas{
+nav.estrelas{
 	width: 100%;
-	display: none;
+	display: block;
 	padding: 0px;
+	margin-top: 50px;
 }
 
 .stars_line{
@@ -77,4 +86,5 @@ div.estrelas{
  }
  .star:hover .star_filled{
  	display: inline;
+ 	transform: scale(1.1);
  }
