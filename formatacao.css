@@ -9,7 +9,6 @@ main{
 }
 
 .bloco{
-
 	max-width: 25%;
 	max-height: 60%;
 	background: dimgray;
@@ -25,16 +24,11 @@ main{
 .bloco_heroi{
 	width: 100% auto;	
 	margin-top: 30px;
-	display: flex;
 }
-
-
 
 ul {
    margin-block-start: 0;
    padding-inline-start: 0px;
-
-
 } 
 
 ul li{
@@ -60,7 +54,7 @@ ul li{
 	object-fit: cover;
 }
 
-nav.estrelas{
+.estrelas{
 	width: 100%;
 	display: block;
 	padding: 0px;
