@@ -9,43 +9,84 @@
 <body>
 
 	<main>
+
+  			<script>
+  				var fulano = prompt('Olá, qual seu nome?');
+  			</script>
     <div class="bloco">
-  		<h1 class="chamada">Olá, escolha um herói:</h1>
+    	<script>
+    		document.write("<h1>"+"Olá " + (fulano) + ", escolha um herói:"+ "</h1>")
+
+  		</script>
   		<nav class="bloco_heroi" align="center">
   			
   		<ul>
-  			<li><img src="batman.jpg" class="heroi"></li>
-  			<li><img src="superman.jpg" class="heroi"></li>
-  			<li><img src="wonderwoman.jpg" class="heroi"></li>
-  			<li><img src="flash.jpg" class="heroi"></li>
+  			<li><img src="batman.jpg" class="heroi" name="batman" onclick="var heroi = 1"></li>
+  			<li><img src="superman.jpg" class="heroi" name="superman" onclick="var heroi = 2"></li>
+  			<li><img src="wonderwoman.jpg" class="heroi" name="wonderwoman" onclick="var heroi = 3"></li>
+  			<li><img src="flash.jpg" class="heroi" name="flash" onclick="var heroi = 4"></li>
   		</ul>
   			
 
   		</nav>
-  		<h1>Escolha de 1 a 10, o quanto você gosta deste herói, abaixo:</h1>
+  		<h1>Escolha de 1 a 10, o quanto você gosta deste herói da DC, abaixo:</h1>
+  		<br>
 
   		<nav class="estrelas" align="center">			
   		<ul>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
-  			<li class="star"><img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=1">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=2">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=3">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=4">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=5">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=6">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=7">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=8">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
+  			<li class="star" id="star" onclick="var star=9">
+  				<img src="star_empty.png" class="star_empty"><img src="star_filled.png" class="star_filled"></li>
   		</ul>
-  		</nav>
-  		<!--<div>
-  			<script>
-  				alert('Qual seu nome?')
-  			</script>
-  		</div>-->
+  		</nav>  		
   		<br>
+  		
+  			<script>
+  				
+
+  				document.write("<h1>"+"Você precisa escolher um herói e dar uma nota"+"</h1>")
+
+  				var star = document.getElementById("star").value;
+  				var heroi = document.getElementById("star").value;
+								
+  				if (star, heroi == 0) {
+  					document.write("<h1>"+"Você precisa escolher um herói e dar uma nota"+"</h1>")
+  				}
+  				else(star, heroi <= 4) {
+  					document.write("<h1>" (fulano)+ ", você deu" + (star) + "para o herói" + (heroi)"</h1>")
+  				}  
+  				else(star, heroi > 4) {
+  					document.write("<h1>"+"Você precisa escolher um herói e dar uma nota"+"</h1>")
+  				}				
+  			</script>
+
+  			<!-- O Usuário deve escolher o herói
+  			       - guardar o herói
+
+  			       O usuario deve escolher uma estrela
+  			       - guardar estrelaa 
+
+  			       Imprimir herói e estrela escolhida
+  			-->
+  			
+
   		<div>
-  			<a href="index.html" class="refazer" style="text-decoration: none"><h2>Refazer</h2></a>
+  			<button class="refazer"><a href="index.html" class="refazer_a" style="text-decoration: none;" ><h2>Refazer</h2></a></button>
   		</div>
 		</div>
 		
