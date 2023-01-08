@@ -21,7 +21,7 @@ main{
 	border-block-style: blur;
 	padding: 40px;
 	font-family: arial;
-	box-shadow: 8px 8px 20px #404040;]
+	box-shadow: 8px 8px 20px #404040;
 
 }
 
@@ -89,3 +89,11 @@ ul li{
  	transform: scale(1.1);
  }
 
+button{
+  background-color: black;
+  border-radius: 5px;
+}
+
+a.refazer_a:visited{
+  color: white;
+}
