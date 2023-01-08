@@ -1,16 +1,22 @@
-
 body{
-	background: lightgray;
-	background-repeat: no-repeat;
+	background: url("logo_dc.png") 20%;
 
 }
-main{
-	margin: 0 auto;
-}
 
-.bloco{
-	max-width: 25%;
-	max-height: 60%;
+main{ 
+  display: flex; 
+  flex-direction: column;
+  
+  align-items: center;  
+  
+  
+}
+.bloco{	
+	display: flex;
+  flex-direction: column;
+  flex-shrink: ;
+	
+	max-width: 25%;  
 	background: dimgray;
 	color: white;
 	border-radius: 30px;
@@ -18,12 +24,12 @@ main{
 	padding: 40px;
 	font-family: arial;
 	box-shadow: 8px 8px 20px #404040;
-    position: relative;
 }
 
 .bloco_heroi{
 	width: 100% auto;	
 	margin-top: 30px;
+	
 }
 
 ul {
@@ -37,7 +43,7 @@ ul li{
 
 .heroi{
 	width: 20%;
-
+	justify-content: space-around;
 	border-radius: 50%;	
 	position: relative;
 	display: inline;
@@ -56,14 +62,8 @@ ul li{
 
 .estrelas{
 	width: 100%;
-	display: block;
-	padding: 0px;
-	margin-top: 50px;
-}
-
-.stars_line{
-	display: inline;
-	
+	display: flex;
+	padding: 0px;	
 }
 
 .star_empty{ 	
